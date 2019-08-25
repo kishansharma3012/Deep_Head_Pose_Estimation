@@ -1,0 +1,2 @@
+#!/bin/bash
+python -W ignore train_hopenet.py --gpu 0 --Model_num 1 --num_epochs 2 --batch_size 16 --lr 1e-5 --dataset 'Pose_300W_LP' --data_dir "/usr/stud/sharmaki/Projects/Advertima/datasets/300W_LP/" --filename_list '/usr/stud/sharmaki/Projects/Advertima/deep-head-pose-master/deep-head-pose-master/dataset_filename/' --alpha 1 --output_dir 'Debug_result1/' --debug 'True' --Loss_func 'MAE' --num_bins 200 --class_weight 'balanced'
